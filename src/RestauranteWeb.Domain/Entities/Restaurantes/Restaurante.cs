@@ -11,6 +11,7 @@ namespace RestauranteWeb.Domain.Entities.Restaurantes
         public string Descricao { get; set; }
 
         public IEnumerable<Prato> Pratos { get; set; }
+
         public IReadOnlyCollection<Notification> Validate()
         {
             new AddNotifications<Restaurante>(this)
