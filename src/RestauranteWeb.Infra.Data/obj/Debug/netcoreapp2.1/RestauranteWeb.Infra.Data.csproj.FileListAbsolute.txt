@@ -1,0 +1,6 @@
+C:\IdentityServer4.Samples-release\Restaurante\RestauranteWeb\src\RestauranteWeb.Infra.Data\bin\Debug\netcoreapp2.1\RestauranteWeb.Infra.Data.deps.json
+C:\IdentityServer4.Samples-release\Restaurante\RestauranteWeb\src\RestauranteWeb.Infra.Data\bin\Debug\netcoreapp2.1\RestauranteWeb.Infra.Data.dll
+C:\IdentityServer4.Samples-release\Restaurante\RestauranteWeb\src\RestauranteWeb.Infra.Data\obj\Debug\netcoreapp2.1\RestauranteWeb.Infra.Data.csproj.CoreCompileInputs.cache
+C:\IdentityServer4.Samples-release\Restaurante\RestauranteWeb\src\RestauranteWeb.Infra.Data\obj\Debug\netcoreapp2.1\RestauranteWeb.Infra.Data.AssemblyInfoInputs.cache
+C:\IdentityServer4.Samples-release\Restaurante\RestauranteWeb\src\RestauranteWeb.Infra.Data\obj\Debug\netcoreapp2.1\RestauranteWeb.Infra.Data.AssemblyInfo.cs
+C:\IdentityServer4.Samples-release\Restaurante\RestauranteWeb\src\RestauranteWeb.Infra.Data\obj\Debug\netcoreapp2.1\RestauranteWeb.Infra.Data.csprojAssemblyReference.cache

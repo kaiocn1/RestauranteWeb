@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\RestauranteWeb.Domain",
+    "\\src\\RestauranteWeb.Domain\\Entities",
+    "\\src\\RestauranteWeb.Domain\\Entities\\Pratos",
+    "\\src\\RestauranteWeb.Domain\\Entities\\Restaurantes",
+    "\\src\\RestauranteWeb.Domain\\SharedKernel"
+  ],
+  "SelectedNode": "\\src\\RestauranteWeb.Domain\\Entities\\Pratos\\Prato.cs",
+  "PreviewInSolutionExplorer": false
+}
