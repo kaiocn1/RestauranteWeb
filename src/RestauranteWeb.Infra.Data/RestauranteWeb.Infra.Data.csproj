@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\RestauranteWeb.CrossCutting.Util\RestauranteWeb.CrossCutting.Util.csproj" />
+    <ProjectReference Include="..\RestauranteWeb.CrossCutting.Utils\RestauranteWeb.CrossCutting.Utils.csproj" />
     <ProjectReference Include="..\RestauranteWeb.Domain\RestauranteWeb.Domain.csproj" />
   </ItemGroup>
 

@@ -687,11 +687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\IdentityServer4.Samples-release\\Restaurante\\RestauranteWeb\\src\\RestauranteWeb.CrossCutting.Negocio\\RestauranteWeb.CrossCutting.Negocio.csproj",
+      "projectUniqueName": "C:\\IdentityServer4.Samples-release\\Restaurante\\Restaurante\\src\\RestauranteWeb.CrossCutting.Negocio\\RestauranteWeb.CrossCutting.Negocio.csproj",
       "projectName": "RestauranteWeb.CrossCutting.Negocio",
-      "projectPath": "C:\\IdentityServer4.Samples-release\\Restaurante\\RestauranteWeb\\src\\RestauranteWeb.CrossCutting.Negocio\\RestauranteWeb.CrossCutting.Negocio.csproj",
+      "projectPath": "C:\\IdentityServer4.Samples-release\\Restaurante\\Restaurante\\src\\RestauranteWeb.CrossCutting.Negocio\\RestauranteWeb.CrossCutting.Negocio.csproj",
       "packagesPath": "C:\\Users\\Acdev\\.nuget\\packages\\",
-      "outputPath": "C:\\IdentityServer4.Samples-release\\Restaurante\\RestauranteWeb\\src\\RestauranteWeb.CrossCutting.Negocio\\obj\\",
+      "outputPath": "C:\\IdentityServer4.Samples-release\\Restaurante\\Restaurante\\src\\RestauranteWeb.CrossCutting.Negocio\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

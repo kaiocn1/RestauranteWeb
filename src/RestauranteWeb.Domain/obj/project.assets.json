@@ -733,11 +733,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\IdentityServer4.Samples-release\\Restaurante\\RestauranteWeb\\src\\RestauranteWeb.Domain\\RestauranteWeb.Domain.csproj",
+      "projectUniqueName": "C:\\IdentityServer4.Samples-release\\Restaurante\\Restaurante\\src\\RestauranteWeb.Domain\\RestauranteWeb.Domain.csproj",
       "projectName": "RestauranteWeb.Domain",
-      "projectPath": "C:\\IdentityServer4.Samples-release\\Restaurante\\RestauranteWeb\\src\\RestauranteWeb.Domain\\RestauranteWeb.Domain.csproj",
+      "projectPath": "C:\\IdentityServer4.Samples-release\\Restaurante\\Restaurante\\src\\RestauranteWeb.Domain\\RestauranteWeb.Domain.csproj",
       "packagesPath": "C:\\Users\\Acdev\\.nuget\\packages\\",
-      "outputPath": "C:\\IdentityServer4.Samples-release\\Restaurante\\RestauranteWeb\\src\\RestauranteWeb.Domain\\obj\\",
+      "outputPath": "C:\\IdentityServer4.Samples-release\\Restaurante\\Restaurante\\src\\RestauranteWeb.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -756,8 +756,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\IdentityServer4.Samples-release\\Restaurante\\RestauranteWeb\\src\\RestauranteWeb.CrossCutting.Negocio\\RestauranteWeb.CrossCutting.Negocio.csproj": {
-              "projectPath": "C:\\IdentityServer4.Samples-release\\Restaurante\\RestauranteWeb\\src\\RestauranteWeb.CrossCutting.Negocio\\RestauranteWeb.CrossCutting.Negocio.csproj"
+            "C:\\IdentityServer4.Samples-release\\Restaurante\\Restaurante\\src\\RestauranteWeb.CrossCutting.Negocio\\RestauranteWeb.CrossCutting.Negocio.csproj": {
+              "projectPath": "C:\\IdentityServer4.Samples-release\\Restaurante\\Restaurante\\src\\RestauranteWeb.CrossCutting.Negocio\\RestauranteWeb.CrossCutting.Negocio.csproj"
             }
           }
         }

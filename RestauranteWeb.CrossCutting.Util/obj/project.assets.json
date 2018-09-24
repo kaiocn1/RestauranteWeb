@@ -985,11 +985,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\IdentityServer4.Samples-release\\Restaurante\\RestauranteWeb\\RestauranteWeb.CrossCutting.Util\\RestauranteWeb.CrossCutting.Util.csproj",
+      "projectUniqueName": "C:\\IdentityServer4.Samples-release\\Restaurante\\Restaurante\\RestauranteWeb.CrossCutting.Util\\RestauranteWeb.CrossCutting.Util.csproj",
       "projectName": "RestauranteWeb.CrossCutting.Util",
-      "projectPath": "C:\\IdentityServer4.Samples-release\\Restaurante\\RestauranteWeb\\RestauranteWeb.CrossCutting.Util\\RestauranteWeb.CrossCutting.Util.csproj",
+      "projectPath": "C:\\IdentityServer4.Samples-release\\Restaurante\\Restaurante\\RestauranteWeb.CrossCutting.Util\\RestauranteWeb.CrossCutting.Util.csproj",
       "packagesPath": "C:\\Users\\Acdev\\.nuget\\packages\\",
-      "outputPath": "C:\\IdentityServer4.Samples-release\\Restaurante\\RestauranteWeb\\RestauranteWeb.CrossCutting.Util\\obj\\",
+      "outputPath": "C:\\IdentityServer4.Samples-release\\Restaurante\\Restaurante\\RestauranteWeb.CrossCutting.Util\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

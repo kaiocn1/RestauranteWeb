@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using RestauranteWeb.CrossCutting.Util;
+using RestauranteWeb.CrossCutting.Utils;
 using RestauranteWeb.Infra.Data.Configurations;
 using System;
 using System.Linq;

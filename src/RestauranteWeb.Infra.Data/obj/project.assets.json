@@ -1018,17 +1018,17 @@
           "bin/placeholder/RestauranteWeb.CrossCutting.Negocio.dll": {}
         }
       },
-      "RestauranteWeb.CrossCutting.Util/1.0.0": {
+      "RestauranteWeb.CrossCutting.Utils/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
           "Microsoft.Extensions.Configuration.Json": "2.1.1"
         },
         "compile": {
-          "bin/placeholder/RestauranteWeb.CrossCutting.Util.dll": {}
+          "bin/placeholder/RestauranteWeb.CrossCutting.Utils.dll": {}
         },
         "runtime": {
-          "bin/placeholder/RestauranteWeb.CrossCutting.Util.dll": {}
+          "bin/placeholder/RestauranteWeb.CrossCutting.Utils.dll": {}
         }
       },
       "RestauranteWeb.Domain/1.0.0": {
@@ -3650,10 +3650,10 @@
       "path": "../RestauranteWeb.CrossCutting.Negocio/RestauranteWeb.CrossCutting.Negocio.csproj",
       "msbuildProject": "../RestauranteWeb.CrossCutting.Negocio/RestauranteWeb.CrossCutting.Negocio.csproj"
     },
-    "RestauranteWeb.CrossCutting.Util/1.0.0": {
+    "RestauranteWeb.CrossCutting.Utils/1.0.0": {
       "type": "project",
-      "path": "../../RestauranteWeb.CrossCutting.Util/RestauranteWeb.CrossCutting.Util.csproj",
-      "msbuildProject": "../../RestauranteWeb.CrossCutting.Util/RestauranteWeb.CrossCutting.Util.csproj"
+      "path": "../RestauranteWeb.CrossCutting.Utils/RestauranteWeb.CrossCutting.Utils.csproj",
+      "msbuildProject": "../RestauranteWeb.CrossCutting.Utils/RestauranteWeb.CrossCutting.Utils.csproj"
     },
     "RestauranteWeb.Domain/1.0.0": {
       "type": "project",
@@ -3666,7 +3666,7 @@
       "Microsoft.EntityFrameworkCore.InMemory >= 2.1.3",
       "Microsoft.EntityFrameworkCore.SqlServer >= 2.1.3",
       "Microsoft.NETCore.App >= 2.1.0",
-      "RestauranteWeb.CrossCutting.Util >= 1.0.0",
+      "RestauranteWeb.CrossCutting.Utils >= 1.0.0",
       "RestauranteWeb.Domain >= 1.0.0"
     ]
   },
@@ -3677,11 +3677,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\IdentityServer4.Samples-release\\Restaurante\\RestauranteWeb\\src\\RestauranteWeb.Infra.Data\\RestauranteWeb.Infra.Data.csproj",
+      "projectUniqueName": "C:\\IdentityServer4.Samples-release\\Restaurante\\Restaurante\\src\\RestauranteWeb.Infra.Data\\RestauranteWeb.Infra.Data.csproj",
       "projectName": "RestauranteWeb.Infra.Data",
-      "projectPath": "C:\\IdentityServer4.Samples-release\\Restaurante\\RestauranteWeb\\src\\RestauranteWeb.Infra.Data\\RestauranteWeb.Infra.Data.csproj",
+      "projectPath": "C:\\IdentityServer4.Samples-release\\Restaurante\\Restaurante\\src\\RestauranteWeb.Infra.Data\\RestauranteWeb.Infra.Data.csproj",
       "packagesPath": "C:\\Users\\Acdev\\.nuget\\packages\\",
-      "outputPath": "C:\\IdentityServer4.Samples-release\\Restaurante\\RestauranteWeb\\src\\RestauranteWeb.Infra.Data\\obj\\",
+      "outputPath": "C:\\IdentityServer4.Samples-release\\Restaurante\\Restaurante\\src\\RestauranteWeb.Infra.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3700,11 +3700,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\IdentityServer4.Samples-release\\Restaurante\\RestauranteWeb\\RestauranteWeb.CrossCutting.Util\\RestauranteWeb.CrossCutting.Util.csproj": {
-              "projectPath": "C:\\IdentityServer4.Samples-release\\Restaurante\\RestauranteWeb\\RestauranteWeb.CrossCutting.Util\\RestauranteWeb.CrossCutting.Util.csproj"
+            "C:\\IdentityServer4.Samples-release\\Restaurante\\Restaurante\\src\\RestauranteWeb.CrossCutting.Utils\\RestauranteWeb.CrossCutting.Utils.csproj": {
+              "projectPath": "C:\\IdentityServer4.Samples-release\\Restaurante\\Restaurante\\src\\RestauranteWeb.CrossCutting.Utils\\RestauranteWeb.CrossCutting.Utils.csproj"
             },
-            "C:\\IdentityServer4.Samples-release\\Restaurante\\RestauranteWeb\\src\\RestauranteWeb.Domain\\RestauranteWeb.Domain.csproj": {
-              "projectPath": "C:\\IdentityServer4.Samples-release\\Restaurante\\RestauranteWeb\\src\\RestauranteWeb.Domain\\RestauranteWeb.Domain.csproj"
+            "C:\\IdentityServer4.Samples-release\\Restaurante\\Restaurante\\src\\RestauranteWeb.Domain\\RestauranteWeb.Domain.csproj": {
+              "projectPath": "C:\\IdentityServer4.Samples-release\\Restaurante\\Restaurante\\src\\RestauranteWeb.Domain\\RestauranteWeb.Domain.csproj"
             }
           }
         }
