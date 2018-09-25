@@ -5,11 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="AppServices\" />
+    <PackageReference Include="AutoMapper" Version="7.0.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="7.0.1" />
+    <ProjectReference Include="..\RestauranteWeb.CrossCutting.Utils\RestauranteWeb.CrossCutting.Utils.csproj" />
+    <ProjectReference Include="..\RestauranteWeb.Domain\RestauranteWeb.Domain.csproj" />
   </ItemGroup>
 
 </Project>

@@ -9,7 +9,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="5.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RestauranteWeb.Application\RestauranteWeb.Application.csproj" />
+    <ProjectReference Include="..\RestauranteWeb.CrossCutting.IoC\RestauranteWeb.CrossCutting.IoC.csproj" />
   </ItemGroup>
 
 </Project>
