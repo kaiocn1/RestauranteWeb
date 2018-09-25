@@ -25,13 +25,16 @@ namespace RestauranteWeb.Api.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            return ModelState.IsValid ? Ok(await _profissionalAppService.Add(profissionalViewModel)) : Ok(new { Errors = ModelState.Errors() });
+            return Ok(await _profissionalAppService.Add(profissionalViewModel));
         }
 
         [HttpGet]
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(Guid id)
         {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
             return Ok(await _profissionalAppService.GetById(id));
         }
 
@@ -52,7 +55,9 @@ namespace RestauranteWeb.Api.Controllers
         [Route("Update")]
         public async Task<IActionResult> Update([FromBody] RestauranteViewModel conta)
         {
-            if (!ModelState.IsValid) return BadRequest(new { Errors = ModelState.E });
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
             var retorno = await _profissionalAppService.Update(conta);
             return Ok(retorno);
         }

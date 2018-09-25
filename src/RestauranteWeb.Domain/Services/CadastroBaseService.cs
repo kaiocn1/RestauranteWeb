@@ -41,18 +41,14 @@ namespace RestauranteWeb.Domain.Services
             return resultado;
         }
 
-        public async System.Threading.Tasks.Task<ResultadoNegocio<IEnumerable<TEntity>>> GetAll()
+        public async System.Threading.Tasks.Task<IEnumerable<TEntity>> GetAll()
         {
-            var result = await Repository.GetAll();
-            return new ResultadoNegocio<IEnumerable<TEntity>>()
-                    .TrateResultado(result);
+            return await Repository.GetAll();
         }
 
-        public async System.Threading.Tasks.Task<ResultadoNegocio<TEntity>> GetById(TKey id)
+        public async System.Threading.Tasks.Task<TEntity> GetById(TKey id)
         {
-            var result = await Repository.GetById(id);
-            return new ResultadoNegocio<TEntity>()
-                        .TrateResultado(result);
+            return await Repository.GetById(id);
         }
 
         public async System.Threading.Tasks.Task<ResultadoNegocio<TEntity>> Remove(TEntity obj)

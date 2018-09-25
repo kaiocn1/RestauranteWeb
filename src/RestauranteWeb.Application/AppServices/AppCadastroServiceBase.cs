@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using RestauranteWeb.Application.Contracts;
 using RestauranteWeb.Application.ViewModels;
+using RestauranteWeb.CrossCutting.Negocio;
 using RestauranteWeb.CrossCutting.Utils;
 using RestauranteWeb.Domain.Contracts.Services;
 using RestauranteWeb.Domain.Entities;
@@ -30,13 +31,13 @@ namespace RestauranteWeb.Application.AppServices
         {
             var entity = Mapper.Map<TEntity>(obj);
             var result = await ServiceBase.Add(entity);
-            return Mapper.Map<TViewModel>(result.Retorno);
+            return TrateRetorno(result);
         }
 
         public async Task<TViewModel> GetById(TKey id)
         {
             var result = await ServiceBase.GetById(id);
-            return Mapper.Map<TViewModel>(result.Retorno);
+            return Mapper.Map<TViewModel>(result);
 
         }
 
@@ -55,21 +56,28 @@ namespace RestauranteWeb.Application.AppServices
         {
             var entity = Mapper.Map<TEntity>(obj);
             var result = await ServiceBase.Update(entity);
-            return Mapper.Map<TViewModel>(result.Retorno);
+            return TrateRetorno(result);
         }
 
         public async Task<TViewModel> AddOrUpdate(TViewModel obj)
         {
             var entity = Mapper.Map<TEntity>(obj);
             var result = await ServiceBase.AddOrUpdate(entity);
-            return Mapper.Map<TViewModel>(result.Retorno);
+            return TrateRetorno(result);
         }
 
         public async Task<TViewModel> Remove(TViewModel obj)
         {
             var entity = Mapper.Map<TEntity>(obj);
             var result = await ServiceBase.Remove(entity);
-            return Mapper.Map<TViewModel>(result.Retorno);
+            return TrateRetorno(result);
+        }
+
+        private TViewModel TrateRetorno(ResultadoNegocio<TEntity> resultadoNegocio)
+        {
+            var retorno = Mapper.Map<TViewModel>(resultadoNegocio.Retorno);
+            retorno.Mensagens = resultadoNegocio.Mensagens;
+            return retorno;
         }
     }
 }
