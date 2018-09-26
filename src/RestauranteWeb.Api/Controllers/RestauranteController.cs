@@ -39,6 +39,17 @@ namespace RestauranteWeb.Api.Controllers
         }
 
         [AllowAnonymous]
+        [Route("ObterPorId")]
+        [HttpGet]
+        public async Task<IActionResult> ObterPorId(Guid id)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            return Ok(await _profissionalAppService.GetById(id));
+        }
+
+        [AllowAnonymous]
         [HttpPost]
         [Route("Add")]
         public async Task<IActionResult> Add([FromBody] RestauranteViewModel conta)

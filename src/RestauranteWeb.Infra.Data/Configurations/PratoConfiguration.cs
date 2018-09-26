@@ -18,6 +18,7 @@ namespace RestauranteWeb.Infra.Data.Configurations
 
             builder.HasOne(p => p.Restaurante)
                    .WithMany(c => c.Pratos)
+                   .HasForeignKey(p => p.RestauranteId)
                    .IsRequired();
         }
     }

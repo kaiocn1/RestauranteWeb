@@ -11,6 +11,9 @@ namespace RestauranteWeb.Application.ViewModels.Pratos
         [StringLength(100, ErrorMessage = "A {0} deve ter no máximo {1} caracteres.")]
         public string Descricao { get; set; }
 
+        [Display(Name = "Preço", Description = "Preço")]
+        public decimal Preco { get; set; }
+
         public RestauranteViewModel Restaurante { get; set; }
     }
 }

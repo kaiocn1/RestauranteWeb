@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\RestauranteWeb.Application\RestauranteWeb.Application.csproj" />
     <ProjectReference Include="..\RestauranteWeb.Domain\RestauranteWeb.Domain.csproj" />
     <ProjectReference Include="..\RestauranteWeb.Infra.Data\RestauranteWeb.Infra.Data.csproj" />
   </ItemGroup>

@@ -21,8 +21,8 @@
 
             if (string.IsNullOrEmpty(_stringConexao))
             {
-                var valor = ConfiguracaoAplicacao.ObterConfiguracao(chaveStringConexao);
-                _stringConexao = valor?.ToString() ?? @"para causar erro de conexao!!";
+                var valor = ConfiguracaoAplicacao.ObterStringConexao(chaveStringConexao);
+                _stringConexao = valor ?? @"para causar erro de conexao!!";
             }
             if (string.IsNullOrEmpty(_execucaoTesteUnitario))
             {

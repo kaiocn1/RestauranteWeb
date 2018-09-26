@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using prmToolkit.NotificationPattern;
 using RestauranteWeb.CrossCutting.Utils;
 using RestauranteWeb.Infra.Data.Configurations;
 using System;
@@ -12,6 +13,7 @@ namespace RestauranteWeb.Infra.Data.Context
         {
             modelBuilder.ApplyConfiguration(new RestauranteConfiguration());
             modelBuilder.ApplyConfiguration(new PratoConfiguration());
+            modelBuilder.Ignore<Notification>();
         }
 
         public override int SaveChanges()

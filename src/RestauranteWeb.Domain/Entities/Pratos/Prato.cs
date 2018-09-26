@@ -10,7 +10,8 @@ namespace RestauranteWeb.Domain.Entities.Pratos
     {
         public string Descricao { get; set; }
         public Restaurante Restaurante { get; set; }
-
+        public decimal Preco { get; set; }
+        public Guid RestauranteId { get; set; }
         public IReadOnlyCollection<Notification> Validate()
         {
             new AddNotifications<Prato>(this)

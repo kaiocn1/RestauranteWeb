@@ -1,4 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using RestauranteWeb.Application.AppServices;
+using RestauranteWeb.Application.Contracts;
 using RestauranteWeb.Domain.Contracts.Repositories;
 using RestauranteWeb.Domain.Contracts.Services;
 using RestauranteWeb.Domain.Services;
@@ -10,6 +12,10 @@ namespace RestauranteWeb.CrossCutting.IoC
     {
         public static void RegisterServices(IServiceCollection services)
         {
+            // AppServices
+            services.AddScoped<IPratoAppService, PratoAppService>();
+            services.AddScoped<IRestauranteAppService, RestauranteAppService>();
+
             // Services
             services.AddScoped<IPratoService, PratoService>();
             services.AddScoped<IRestauranteService, RestauranteService>();

@@ -336,3 +336,9 @@ ASALocalRun/
 .vs/RestauranteWeb/v15/.suo
 *.cache
 .vs/RestauranteWeb/v15/.suo
+*.ide
+*.ide-shm
+*.ide-wal
+.vs/RestauranteWeb/v15/.suo
+.vs/RestauranteWeb/DesignTimeBuild/.dtbcache
+*.dtbcache
