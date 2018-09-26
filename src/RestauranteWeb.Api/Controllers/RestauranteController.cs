@@ -39,9 +39,9 @@ namespace RestauranteWeb.Api.Controllers
         }
 
         [AllowAnonymous]
-        [Route("ObterPorId")]
+        [Route("GetById")]
         [HttpGet]
-        public async Task<IActionResult> ObterPorId(Guid id)
+        public async Task<IActionResult> GetById(Guid id)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
