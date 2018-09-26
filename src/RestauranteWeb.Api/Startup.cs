@@ -4,9 +4,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using NJsonSchema;
+using NSwag.AspNetCore;
 using RestauranteWeb.Api.Configurations;
 using RestauranteWeb.CrossCutting.IoC;
 using System.IO;
+using System.Reflection;
 
 namespace RestauranteWeb.Api
 {
@@ -68,6 +71,12 @@ namespace RestauranteWeb.Api
                        {
                            routes.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");
                        });
+
+            app.UseSwaggerUi(typeof(Startup).GetTypeInfo().Assembly, settings =>
+                                                                     {
+                                                                         settings.GeneratorSettings.DefaultPropertyNameHandling =
+                                                                             PropertyNameHandling.CamelCase;
+                                                                     });
         }
 
         private static void RegisterServices(IServiceCollection services)
