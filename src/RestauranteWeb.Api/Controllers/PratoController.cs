@@ -1,31 +1,29 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using RestauranteWeb.Application.Contracts;
-using RestauranteWeb.Application.ViewModels.Restaurantes;
+using RestauranteWeb.Application.ViewModels.Pratos;
 using System;
 using System.Threading.Tasks;
 
 namespace RestauranteWeb.Api.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class RestauranteController : Controller
+    public class PratoController : Controller
     {
-        private readonly IRestauranteAppService _restauranteAppService;
+        private readonly IPratoAppService _pratoAppServiceprato;
 
-        public RestauranteController(IRestauranteAppService contaAppService)
+        public PratoController(IPratoAppService contaAppService)
         {
-            _restauranteAppService = contaAppService;
+            _pratoAppServiceprato = contaAppService;
         }
 
         [HttpPost]
         [Route("Post")]
-        public async Task<IActionResult> Post([FromBody] RestauranteViewModel restaurante)
+        public async Task<IActionResult> Post([FromBody] PratoViewModel prato)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            return Ok(await _restauranteAppService.Add(restaurante));
+            return Ok(await _pratoAppServiceprato.Add(prato));
         }
 
         [HttpGet]
@@ -35,7 +33,7 @@ namespace RestauranteWeb.Api.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            return Ok(await _restauranteAppService.GetById(id));
+            return Ok(await _pratoAppServiceprato.GetById(id));
         }
 
         [AllowAnonymous]
@@ -46,37 +44,37 @@ namespace RestauranteWeb.Api.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            return Ok(await _restauranteAppService.GetById(id));
+            return Ok(await _pratoAppServiceprato.GetById(id));
         }
 
         [AllowAnonymous]
         [HttpPost]
         [Route("Add")]
-        public async Task<IActionResult> Add([FromBody] RestauranteViewModel restaurante)
+        public async Task<IActionResult> Add([FromBody] PratoViewModel prato)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var retorno = await _restauranteAppService.Add(restaurante);
+            var retorno = await _pratoAppServiceprato.Add(prato);
             return Ok(retorno);
         }
 
         [AllowAnonymous]
         [HttpPost]
         [Route("Update")]
-        public async Task<IActionResult> Update([FromBody] RestauranteViewModel restaurante)
+        public async Task<IActionResult> Update([FromBody] PratoViewModel prato)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var retorno = await _restauranteAppService.Update(restaurante);
+            var retorno = await _pratoAppServiceprato.Update(prato);
             return Ok(retorno);
         }
 
         [HttpGet]
         public async Task<IActionResult> GetAll(long id)
         {
-            return Ok(await _restauranteAppService.GetAll());
+            return Ok(await _pratoAppServiceprato.GetAll());
         }
     }
 }
