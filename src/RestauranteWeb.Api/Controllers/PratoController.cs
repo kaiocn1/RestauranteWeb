@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 
 namespace RestauranteWeb.Api.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class PratoController : Controller
     {
         private readonly IPratoAppService _pratoAppServiceprato;
