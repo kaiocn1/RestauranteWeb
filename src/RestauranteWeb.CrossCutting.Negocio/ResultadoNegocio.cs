@@ -51,5 +51,17 @@ namespace RestauranteWeb.CrossCutting.Negocio
             this.Retorno = resultado;
             return this;
         }
+
+        public ResultadoNegocio<T> AdicioneResultadoValidacao(T resultado, ResultadoNegocio<bool> validacao)
+        {
+            this.Retorno = resultado;
+
+            foreach (var mensagem in validacao.Mensagens)
+            {
+                DicionarioMensagens[mensagem.Key] = mensagem.Value;
+            }
+
+            return this;
+        }
     }
 }

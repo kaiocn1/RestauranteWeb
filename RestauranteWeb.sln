@@ -25,9 +25,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestauranteWeb.CrossCutting
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestauranteWeb.CrossCutting.IoC", "src\RestauranteWeb.CrossCutting.IoC\RestauranteWeb.CrossCutting.IoC.csproj", "{DB517E7D-E17B-4F1B-A354-10C1FA1FC44A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestauranteWeb.Application", "src\RestauranteWeb.Application\RestauranteWeb.Application.csproj", "{3A6EAAAB-3CE2-4349-B013-1720B1D51438}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestauranteWeb.Application", "src\RestauranteWeb.Application\RestauranteWeb.Application.csproj", "{3A6EAAAB-3CE2-4349-B013-1720B1D51438}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestauranteWeb.Api", "src\RestauranteWeb.Api\RestauranteWeb.Api.csproj", "{34149BB4-0241-4A36-8482-04DCF1FDD77A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestauranteWeb.Api", "src\RestauranteWeb.Api\RestauranteWeb.Api.csproj", "{34149BB4-0241-4A36-8482-04DCF1FDD77A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Tests", "5 - Tests", "{BB0F1411-701E-4CC8-8E59-A9E9D68A0FEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestauranteWeb.Api.Integration.Test", "test\RestauranteWeb.Api.Integration.Test\RestauranteWeb.Api.Integration.Test.csproj", "{3670FB26-773C-4F23-8892-2CB1BAD0F200}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestauranteWeb.Domain.Test", "test\RestauranteWeb.Domain.Test\RestauranteWeb.Domain.Test.csproj", "{51BE6ADA-00FE-4DA1-AC0F-98F6F17A6D69}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +69,14 @@ Global
 		{34149BB4-0241-4A36-8482-04DCF1FDD77A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34149BB4-0241-4A36-8482-04DCF1FDD77A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34149BB4-0241-4A36-8482-04DCF1FDD77A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3670FB26-773C-4F23-8892-2CB1BAD0F200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3670FB26-773C-4F23-8892-2CB1BAD0F200}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3670FB26-773C-4F23-8892-2CB1BAD0F200}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3670FB26-773C-4F23-8892-2CB1BAD0F200}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51BE6ADA-00FE-4DA1-AC0F-98F6F17A6D69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51BE6ADA-00FE-4DA1-AC0F-98F6F17A6D69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51BE6ADA-00FE-4DA1-AC0F-98F6F17A6D69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51BE6ADA-00FE-4DA1-AC0F-98F6F17A6D69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -77,6 +91,8 @@ Global
 		{DB517E7D-E17B-4F1B-A354-10C1FA1FC44A} = {7BA09D07-4430-43F3-9E2B-C90CAEA04E89}
 		{3A6EAAAB-3CE2-4349-B013-1720B1D51438} = {A561E636-9020-4A13-A829-2509B0256A77}
 		{34149BB4-0241-4A36-8482-04DCF1FDD77A} = {C9CD4263-DF09-4507-B5E7-DEAB0F90D3DB}
+		{3670FB26-773C-4F23-8892-2CB1BAD0F200} = {BB0F1411-701E-4CC8-8E59-A9E9D68A0FEA}
+		{51BE6ADA-00FE-4DA1-AC0F-98F6F17A6D69} = {BB0F1411-701E-4CC8-8E59-A9E9D68A0FEA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6C2D18CB-3E3D-43B1-9E89-23CD717DAAE7}

@@ -20,7 +20,7 @@ namespace RestauranteWeb.Domain.Entities.Pratos
                                "Descrição deve ser informada.");
 
             new AddNotifications<Prato>(this)
-                .IfNull(Restaurante,
+                .IfTrue(RestauranteId == Guid.Empty,
                         "Restaurante",
                         "Restaurante deve ser informado.");
 

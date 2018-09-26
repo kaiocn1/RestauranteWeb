@@ -17,28 +17,33 @@ namespace RestauranteWeb.Domain.Services
 
         public async System.Threading.Tasks.Task<ResultadoNegocio<TEntity>> Add(TEntity obj)
         {
-            var resultado = new ResultadoNegocio<TEntity>()
-                .TrateResultado(obj);
+            var resultadoValidacao = Validate(obj);
 
-            if (resultado.Sucesso)
+            if (!resultadoValidacao.Sucesso)
             {
-                await Repository.Add(obj);
+                return new ResultadoNegocio<TEntity>()
+                    .AdicioneResultadoValidacao(obj, resultadoValidacao); ;
             }
 
-            return resultado;
+            await Repository.Add(obj);
+
+            return new ResultadoNegocio<TEntity>()
+                .TrateResultado(obj); ;
         }
 
         public async System.Threading.Tasks.Task<ResultadoNegocio<TEntity>> AddOrUpdate(TEntity obj)
         {
-            var resultado = new ResultadoNegocio<TEntity>()
-                .TrateResultado(obj);
+            var resultadoValidacao = Validate(obj);
 
-            if (resultado.Sucesso)
+            if (!resultadoValidacao.Sucesso)
             {
-                await Repository.AddOrUpdate(obj);
+                return new ResultadoNegocio<TEntity>()
+                    .AdicioneResultadoValidacao(obj, resultadoValidacao); ;
             }
 
-            return resultado;
+            await Repository.AddOrUpdate(obj);
+            return new ResultadoNegocio<TEntity>()
+                .TrateResultado(obj); ;
         }
 
         public async System.Threading.Tasks.Task<IEnumerable<TEntity>> GetAll()
@@ -61,15 +66,18 @@ namespace RestauranteWeb.Domain.Services
 
         public async System.Threading.Tasks.Task<ResultadoNegocio<TEntity>> Update(TEntity obj)
         {
-            var resultado = new ResultadoNegocio<TEntity>()
-                .TrateResultado(obj);
+            var resultadoValidacao = Validate(obj);
 
-            if (resultado.Sucesso)
+            if (!resultadoValidacao.Sucesso)
             {
-                await Repository.Update(obj);
+                return new ResultadoNegocio<TEntity>()
+                    .AdicioneResultadoValidacao(obj, resultadoValidacao); ;
             }
 
-            return resultado;
+            await Repository.Update(obj);
+
+            return new ResultadoNegocio<TEntity>()
+                .TrateResultado(obj); ;
         }
     }
 }
