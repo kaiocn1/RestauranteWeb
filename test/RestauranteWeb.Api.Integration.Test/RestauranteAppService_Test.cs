@@ -17,12 +17,12 @@ namespace RestauranteWeb.Api.Integration.Test
             var response = await Client.PostAsync("/api/Restaurante/Post", restaurante.ToJon());
             response.EnsureSuccessStatusCode();
 
-            var clienteViewModel = await JsonToObject<RestauranteViewModel>.Convert(response);
+            var restauranteViewModel = await JsonToObject<RestauranteViewModel>.Convert(response);
 
-            var clienteBanco = await Client.GetAsync("/api/Restaurante/" + clienteViewModel.IdEntidade);
-            clienteBanco.EnsureSuccessStatusCode();
+            var restauranteBanco = await Client.GetAsync("/api/Restaurante/" + restauranteViewModel.IdEntidade);
+            restauranteBanco.EnsureSuccessStatusCode();
 
-            var clienteResposta = await JsonToObject<RestauranteViewModel>.Convert(clienteBanco);
+            var clienteResposta = await JsonToObject<RestauranteViewModel>.Convert(restauranteBanco);
 
             Assert.NotNull(clienteResposta);
         }
