@@ -10,7 +10,7 @@ using RestauranteWeb.Infra.Data.Context;
 namespace RestauranteWeb.Infra.Data.Migrations
 {
     [DbContext(typeof(RestauranteWebContext))]
-    [Migration("20180926120536_000_Initial_Create")]
+    [Migration("20180926140852_000_Initial_Create")]
     partial class _000_Initial_Create
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -36,8 +36,7 @@ namespace RestauranteWeb.Infra.Data.Migrations
 
                     b.Property<decimal>("Preco");
 
-                    b.Property<Guid?>("RestauranteIdEntidade")
-                        .IsRequired();
+                    b.Property<Guid>("RestauranteId");
 
                     b.Property<byte>("StatusRegistro");
 
@@ -48,7 +47,7 @@ namespace RestauranteWeb.Infra.Data.Migrations
                     b.HasKey("IdEntidade")
                         .HasName("PratoId");
 
-                    b.HasIndex("RestauranteIdEntidade");
+                    b.HasIndex("RestauranteId");
 
                     b.ToTable("Pratos");
                 });
@@ -82,7 +81,7 @@ namespace RestauranteWeb.Infra.Data.Migrations
                 {
                     b.HasOne("RestauranteWeb.Domain.Entities.Restaurantes.Restaurante", "Restaurante")
                         .WithMany("Pratos")
-                        .HasForeignKey("RestauranteIdEntidade")
+                        .HasForeignKey("RestauranteId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618

@@ -66,10 +66,9 @@ namespace RestauranteWeb.Application.AppServices
             return TrateRetorno(result);
         }
 
-        public async Task<TViewModel> Remove(TViewModel obj)
+        public async Task<TViewModel> Remove(TKey obj)
         {
-            var entity = Mapper.Map<TEntity>(obj);
-            var result = await ServiceBase.Remove(entity);
+            var result = await ServiceBase.Remove(obj);
             return TrateRetorno(result);
         }
 

@@ -51,9 +51,10 @@ namespace RestauranteWeb.Domain.Services
             return await Repository.GetById(id);
         }
 
-        public async System.Threading.Tasks.Task<ResultadoNegocio<TEntity>> Remove(TEntity obj)
+        public virtual async System.Threading.Tasks.Task<ResultadoNegocio<TEntity>> Remove(TKey obj)
         {
-            var result = await Repository.Remove(obj);
+            var objeto = await GetById(obj);
+            var result = await Repository.Remove(objeto);
             return new ResultadoNegocio<TEntity>()
                         .TrateResultado(result);
         }

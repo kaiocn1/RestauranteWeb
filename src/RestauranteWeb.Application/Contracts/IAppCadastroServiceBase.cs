@@ -10,6 +10,6 @@ namespace RestauranteWeb.Application.Contracts
         Task<IEnumerable<TViewModel>> GetAll();
         Task<TViewModel> Update(TViewModel obj);
         Task<TViewModel> AddOrUpdate(TViewModel obj);
-        Task<TViewModel> Remove(TViewModel obj);
+        Task<TViewModel> Remove(TKey obj);
     }
 }

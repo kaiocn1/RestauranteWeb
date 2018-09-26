@@ -74,9 +74,19 @@ namespace RestauranteWeb.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll(long id)
+        [AllowAnonymous]
+        [Route("GetAll")]
+        public async Task<IActionResult> GetAll()
         {
             return Ok(await _pratoAppServiceprato.GetAll());
+        }
+
+        [HttpDelete]
+        [AllowAnonymous]
+        [Route("Remove")]
+        public async Task<IActionResult> Remove(Guid id)
+        {
+            return Ok(await _pratoAppServiceprato.Remove(id));
         }
     }
 }

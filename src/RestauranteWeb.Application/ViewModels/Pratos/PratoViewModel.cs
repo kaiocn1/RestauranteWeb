@@ -15,5 +15,9 @@ namespace RestauranteWeb.Application.ViewModels.Pratos
         public decimal Preco { get; set; }
 
         public RestauranteViewModel Restaurante { get; set; }
+
+        [Display(Name = "Restaurante", Description = "Restaurante")]
+        [Required(ErrorMessage = "{0} é obrigatório.")]
+        public Guid? RestauranteId { get; set; }
     }
 }

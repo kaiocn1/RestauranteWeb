@@ -35,24 +35,24 @@ namespace RestauranteWeb.Infra.Data.Migrations
                     DataHoraInativacao = table.Column<DateTime>(nullable: false),
                     UsuarioInativacao = table.Column<Guid>(nullable: false),
                     Descricao = table.Column<string>(maxLength: 100, nullable: false),
-                    RestauranteIdEntidade = table.Column<Guid>(nullable: false),
-                    Preco = table.Column<decimal>(nullable: false)
+                    Preco = table.Column<decimal>(nullable: false),
+                    RestauranteId = table.Column<Guid>(nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PratoId", x => x.IdEntidade);
                     table.ForeignKey(
-                        name: "FK_Pratos_Restaurantes_RestauranteIdEntidade",
-                        column: x => x.RestauranteIdEntidade,
+                        name: "FK_Pratos_Restaurantes_RestauranteId",
+                        column: x => x.RestauranteId,
                         principalTable: "Restaurantes",
                         principalColumn: "IdEntidade",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Pratos_RestauranteIdEntidade",
+                name: "IX_Pratos_RestauranteId",
                 table: "Pratos",
-                column: "RestauranteIdEntidade");
+                column: "RestauranteId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

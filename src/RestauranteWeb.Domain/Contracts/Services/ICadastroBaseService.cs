@@ -11,6 +11,6 @@ namespace RestauranteWeb.Domain.Contracts.Services
         Task<IEnumerable<TEntity>> GetAll();
         Task<ResultadoNegocio<TEntity>> Update(TEntity obj);
         Task<ResultadoNegocio<TEntity>> AddOrUpdate(TEntity obj);
-        Task<ResultadoNegocio<TEntity>> Remove(TEntity obj);
+        Task<ResultadoNegocio<TEntity>> Remove(TKey obj);
     }
 }
