@@ -342,3 +342,4 @@ ASALocalRun/
 .vs/RestauranteWeb/v15/.suo
 .vs/RestauranteWeb/DesignTimeBuild/.dtbcache
 *.dtbcache
+*.cache
